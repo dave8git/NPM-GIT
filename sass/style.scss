@@ -23,8 +23,51 @@ section {
 
 .section-header h1 {
     text-transform: uppercase;
-    font-weight: 900;
 }
+
+/* open slider */ 
+/* Side-nav */
+.open-slide {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    visibility: hidden;
+}
+.side-nav {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 3;
+    top: 0; 
+    left: 0; 
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.3;
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute; 
+    top: 0; 
+    right: 22px;
+    font-size: 36px; 
+    margin-left: 50px;
+}
+
 /* header */
 
 .header {
@@ -37,6 +80,7 @@ section {
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
+    padding-bottom: 80px;
 }
 .navbar-section {
     display: flex;
@@ -215,4 +259,49 @@ footer {
     color: #fff;
   }
   
-  
+  /* media queries */
+@media (max-width: 768px) {
+    
+    /* Side-nav */
+    
+        .open-slide {
+            visibility: visible;
+            z-index: 2;
+        }
+        .navbar-section {
+            display: none;
+        }
+        .icons-text {
+            flex-direction: column;
+        }
+    /* services */
+    .services {
+        padding: 30px;
+    }
+    .section-header {
+        padding-bottom: 30px;
+    }
+
+    /* portfolio */
+    .row {
+        display: block;
+        }
+
+    .circle-around-icon {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    footer {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .circle-around-icon {
+        margin: 14px;
+    }
+    .nice {
+        font-size: 18px;
+    }
+    }
