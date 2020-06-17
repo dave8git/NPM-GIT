@@ -1,0 +1,247 @@
+/* global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.section-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.section-header h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* header */
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: relative;
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/3550482/pexels-photo-3550482.jpeg?cs=srgb&dl=laptop-internet-stol-technologia-3550482.jpg&fm=jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.navbar-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 60px auto 100px auto;
+}
+
+ul {
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.logo {
+  margin: 20px;
+  margin-right: 400px;
+}
+
+ul li {
+  text-transform: uppercase;
+  margin: 20px;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.welcome {
+  font-style: italic;
+  font-size: 32px;
+  padding: 22px 0 35px 0;
+}
+
+.nice {
+  text-transform: uppercase;
+  font-family: baskerville, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+button {
+  background-color: gold;
+  /* Green */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 40px;
+}
+
+/* services */
+.services {
+  text-align: center;
+}
+
+.icons-text {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon-group {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+
+.icon-border {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border: 3px solid gold;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.fas {
+  color: gold;
+  font-size: 32px;
+}
+
+/* portfolio */
+.portfolio {
+  text-align: center;
+  background-color: #F7F7F7;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.picture-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+  background-position: center center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  z-index: 3;
+  height: 400px;
+  /* width: 300px; */
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  margin: 20px;
+}
+
+.picture-group-1 {
+  background-image: url(https://images.pexels.com/photos/193349/pexels-photo-193349.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+
+.picture-group-2 {
+  background-image: url(https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+
+.picture-group-3 {
+  background-image: url(https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+
+.picture-group-4 {
+  background-image: url(https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+
+.picture-group-5 {
+  background-image: url(https://images.pexels.com/photos/1342460/pexels-photo-1342460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+
+.picture-group-6 {
+  background-image: url(https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+
+.heading-bottom {
+  background-color: white;
+  width: 100%;
+}
+
+/* footer */
+footer {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  background-color: #fff;
+  color: #fff;
+}
+
+footer p {
+  color: #000;
+}
+
+.circle-around-icon {
+  border: 2px solid #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 15px 15px;
+  background-color: #000;
+}
+
+.fa-twitter-white {
+  color: #fff;
+}
+
+.fa-facebook-white {
+  color: #fff;
+}
+
+.fa-pinterest-white {
+  color: #fff;
+}
+
+.fa-google-pluse-white {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
