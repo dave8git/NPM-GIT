@@ -1,14 +1,24 @@
 /* global */
-*, *::before, *::after {
-    box-sizing: border-box
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
 }
 
 body {
     font-family: 'Lato', sans-serif;
+    margin: 0;
 }
+
 .container {
     max-width: 980px;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 section {
@@ -25,7 +35,7 @@ section {
     text-transform: uppercase;
 }
 
-/* open slider */ 
+/* open slider */
 /* Side-nav */
 .open-slide {
     position: absolute;
@@ -33,21 +43,22 @@ section {
     left: 20px;
     visibility: hidden;
 }
-.side-nav {
-    height: 100%; 
-    width: 0; 
+
+#side-menu {
+    height: 100%;
+    width: 0;
     position: fixed;
     z-index: 3;
-    top: 0; 
-    left: 0; 
+    top: 0;
+    left: 0;
     background-color: #111;
     opacity: 0.9;
     overflow-x: hidden;
-    padding-top: 60px; 
+    padding-top: 60px;
     transition: 0.5s;
 }
 
-.side-nav a{
+#side-menu a {
     padding: 10px 10px 10px 30px;
     text-decoration: none;
     font-size: 22px;
@@ -56,15 +67,15 @@ section {
     transition: 0.3;
 }
 
-.side-nav a:hover {
+#side-menu a:hover {
     color: #fff;
 }
 
-.side-nav .btn-close {
-    position: absolute; 
-    top: 0; 
+#side-menu .btn-close {
+    position: absolute;
+    top: 0;
     right: 22px;
-    font-size: 36px; 
+    font-size: 36px;
     margin-left: 50px;
 }
 
@@ -73,7 +84,7 @@ section {
 .header {
     display: flex;
     flex-direction: column;
-    position: relative; 
+    position: relative;
     text-align: center;
     background-image: url(https://images.pexels.com/photos/3550482/pexels-photo-3550482.jpeg?cs=srgb&dl=laptop-internet-stol-technologia-3550482.jpg&fm=jpg);
     background-position: center center;
@@ -82,11 +93,13 @@ section {
     color: #fff;
     padding-bottom: 80px;
 }
+
 .navbar-section {
     display: flex;
     justify-content: space-around;
     margin: 60px auto 100px auto;
 }
+
 ul {
     display: flex;
     list-style-type: none;
@@ -96,6 +109,7 @@ ul {
     margin: 20px;
     margin-right: 400px;
 }
+
 ul li {
     text-transform: uppercase;
     margin: 20px;
@@ -103,11 +117,13 @@ ul li {
     font-family: Montserrat;
     font-weight: bold;
 }
+
 .welcome {
     font-style: italic;
     font-size: 32px;
     padding: 22px 0 35px 0;
 }
+
 .nice {
     text-transform: uppercase;
     font-family: baskerville, Tahoma, sans-serif;
@@ -115,8 +131,10 @@ ul li {
     font-size: 44px;
     font-weight: bold;
 }
+
 button {
-    background-color: gold; /* Green */
+    background-color: gold;
+    /* Green */
     border: none;
     border-radius: 5px;
     color: white;
@@ -128,6 +146,7 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     margin: 40px;
+    cursor: grab;
 }
 
 /* services */
@@ -154,22 +173,25 @@ button {
     height: 60px;
     margin: 0 auto;
 }
+
 .fas {
     color: gold;
     font-size: 32px;
 }
 
-/* portfolio */ 
+/* portfolio */
 
 .portfolio {
     text-align: center;
     background-color: #F7F7F7;
 }
+
 .row {
     display: flex;
     margin: 0 auto;
     text-align: center;
 }
+
 .picture-group {
     display: flex;
     flex-direction: column-reverse;
@@ -182,6 +204,7 @@ button {
     flex-basis: 33.33%;
     margin: 20px;
 }
+
 .picture-group-1 {
     background-image: url(https://images.pexels.com/photos/193349/pexels-photo-193349.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
 }
@@ -208,10 +231,10 @@ button {
 
 .heading-bottom {
     background-color: white;
-    width: 100%; 
+    width: 100%;
 }
 
-/* footer */ 
+/* footer */
 
 footer {
     display: flex;
@@ -223,13 +246,13 @@ footer {
     height: 100%;
     background-color: #fff;
     color: #fff;
-  }
-  
-  footer p {
+}
+
+footer p {
     color: #000;
-  }
-  
-  .circle-around-icon {
+}
+
+.circle-around-icon {
     border: 2px solid #000;
     width: 40px;
     height: 40px;
@@ -241,43 +264,57 @@ footer {
     align-items: center;
     margin: 15px 15px;
     background-color: #000;
-  }
-  
-  .fa-twitter-white {
+}
+
+.fa-twitter-white {
     color: #fff;
-  }
-  
-  .fa-facebook-white {
+}
+
+.fa-facebook-white {
     color: #fff;
-  }
-  
-  .fa-pinterest-white {
+}
+
+.fa-pinterest-white {
     color: #fff;
-  }
-  
-  .fa-google-pluse-white {
+}
+
+.fa-google-pluse-white {
     color: #fff;
-  }
-  
-  /* media queries */
+}
+
+/* media queries */
+@media (min-width: 768px) and (max-width: 1000px) {
+    .logo {
+        margin: 0 auto;
+    }
+
+    .navbar-section {
+        display: block;
+    }
+}
+
 @media (max-width: 768px) {
-    
+
     /* Side-nav */
-    
-        .open-slide {
-            visibility: visible;
-            z-index: 2;
-        }
-        .navbar-section {
-            display: none;
-        }
-        .icons-text {
-            flex-direction: column;
-        }
+
+    .open-slide {
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .navbar-section {
+        display: none;
+    }
+
+    .icons-text {
+        flex-direction: column;
+    }
+
     /* services */
     .services {
         padding: 30px;
     }
+
     .section-header {
         padding-bottom: 30px;
     }
@@ -285,7 +322,7 @@ footer {
     /* portfolio */
     .row {
         display: block;
-        }
+    }
 
     .circle-around-icon {
         width: 30px;
@@ -298,10 +335,12 @@ footer {
         padding-left: 0;
         padding-right: 0;
     }
+
     .circle-around-icon {
         margin: 14px;
     }
+
     .nice {
         font-size: 18px;
     }
-    }
+}

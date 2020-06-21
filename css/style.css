@@ -1,15 +1,23 @@
 /* global */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+  margin: 0;
 }
 
 .container {
   max-width: 980px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 section {
@@ -37,7 +45,7 @@ section {
   visibility: hidden;
 }
 
-.side-nav {
+#side-menu {
   height: 100%;
   width: 0;
   position: fixed;
@@ -51,7 +59,7 @@ section {
   transition: 0.5s;
 }
 
-.side-nav a {
+#side-menu a {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
   font-size: 22px;
@@ -60,11 +68,11 @@ section {
   transition: 0.3;
 }
 
-.side-nav a:hover {
+#side-menu a:hover {
   color: #fff;
 }
 
-.side-nav .btn-close {
+#side-menu .btn-close {
   position: absolute;
   top: 0;
   right: 22px;
@@ -143,6 +151,7 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   margin: 40px;
+  cursor: grab;
 }
 
 /* services */
@@ -290,6 +299,15 @@ footer p {
 }
 
 /* media queries */
+@media (min-width: 768px) and (max-width: 1000px) {
+  .logo {
+    margin: 0 auto;
+  }
+  .navbar-section {
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   /* Side-nav */
   .open-slide {
