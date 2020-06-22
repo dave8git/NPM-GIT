@@ -151,7 +151,14 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   margin: 40px;
-  cursor: grab;
+  cursor: pointer;
+}
+
+.side-menu-ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 /* services */
@@ -299,7 +306,7 @@ footer p {
 }
 
 /* media queries */
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1030px) {
   .logo {
     margin: 0 auto;
   }
