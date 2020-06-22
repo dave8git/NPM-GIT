@@ -30,10 +30,14 @@
                 <li class="side-menu-li"><a href="#">O mnie</a></li>
                 <li class="side-menu-li"><a href="#">Projekty</a></li>
                 <li class="side-menu-li"><a href="#">Kontakt</a></li>
-                <li class="side-menu-li"><p>tel. 0000000000</p></li>
-                <li class="side-menu-li"><p>email: email@gmail.com</p></li>
+                <li class="side-menu-li">
+                    <p>tel. 0000000000</p>
+                </li>
+                <li class="side-menu-li">
+                    <p>email: email@gmail.com</p>
+                </li>
             </ul>
-            
+
         </div>
         <div class="navbar-section container">
             <p class="logo">Golden</p>
@@ -142,18 +146,26 @@
     <footer class="container">
         <p class="nine_thyssen_bold">&copy; Copyright 2019 DaveDesign</p>
         <div class="icons">
-            <div class="circle-around-icon">
-                <i class="fab fa-twitter fa-twitter-white"><a href="#"></a></i>
-            </div>
-            <div class="circle-around-icon">
-                <i class="fab fa-facebook-f fa-facebook-white"><a href="#"></a></i>
-            </div>
-            <div class="circle-around-icon">
-                <i class="fab fa-pinterest-p fa-pinterest-white"><a href="#"></a></i>
-            </div>
-            <div class="circle-around-icon">
-                <i class="fab fa-google-plus-g fa-google-pluse-white"><a href="#"></a></i>
-            </div>
+            <a href="#">
+                <div class="circle-around-icon">
+                    <i class="fab fa-twitter fa-twitter-white"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="circle-around-icon">
+                    <i class="fab fa-facebook-f fa-facebook-white"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="circle-around-icon">
+                    <i class="fab fa-pinterest-p fa-pinterest-white"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="circle-around-icon">
+                    <i class="fab fa-google-plus-g fa-google-pluse-white"></i>
+                </div>
+            </a>
         </div>
     </footer>
 </body>
@@ -163,9 +175,11 @@
         document.getElementById('side-menu').style.width = '250px';
         // document.getElementById('main').style.marginLeft = '250px';
     }
+
     function closeSlideMenu() {
         document.getElementById('side-menu').style.width = '0';
         // document.getElementById('main').style.marginLeft = '0';
     }
 </script>
+
 </html>
